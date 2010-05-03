@@ -3,14 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>$page.title - PyCon India 2010</title>
-
-    <link rel="stylesheet" type="text/css" href="$homepath()/css/style.css?format=raw"/>
-
-    <link rel="stylesheet" type="text/css" href="static/style.css"/>
+    <link rel="stylesheet" type="text/css" href="static/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script type="text/javascript" src=""></script>
-
     <script type="text/javascript">
 		$(document).ready( function(){
 			// do something
@@ -18,49 +14,32 @@
 	</script>
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-        </div>
-        <div id="sidebar">
-            <ul>
-                <li><a href="$homepath()/">Home</a></li>
-                <li><a href="$homepath()/sponsors">Sponsors</a></li>
-                <li><a href="$homepath()/cfp">CFP</a></li>
-                <li><a href="$homepath()/program">Program</a></li>
-            </ul>
-        </div>
-        
-        <div id="sponsors">
-            <b>Platinum Sponsors</b>
-            <br/>
-            <img src="http://placehold.it/120x80&text=Sponsor"/>
-            <br/>
-        
-            <b>Gold Sponsors</b>
-            <br/>
-            <img src="http://placehold.it/120x80&text=Sponsor"/>
-            <br/>
-            <img src="http://placehold.it/120x80&text=Sponsor"/>
-            <br/>
-
-            <b>Silver Sponsors</b>
-            <br/>
-            <img src="http://placehold.it/120x80&text=Sponsor"/>
-            <br/>
-            <img src="http://placehold.it/120x80&text=Sponsor"/>
-            <br/>
-        </div>
-        
-        <div id="content">
-            $if page.title != "Home":
-                <h1>$page.title</h1>
-            $:page
-        </div>
-        <div style="clear: both;"></div>
-        
-        <div id="footer">
-            <a href="#">Contact Us</a>
-            <span style="float: right">Powered by <a href="http://infogami.org/">Infogami</a></span>
-        </div>
+	<div id="wrapper">
+		<div id="top-menu">
+			Welcome <a href="#">Abhishek</a> | <a href="#">logout</a>
+		</div>
+		<div id="header">
+			<h1>PyCon India 2010</h1>
+			<div id="slogan">
+				<p>Sep 25,26 '10</p>
+				<p>Bangalore, IN</p>
+			</div>
+		</div>
+		<div id="main-menu">
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">Sponsors</a>
+				</li>
+				<li>
+					<a href="#">CFP</a>
+				</li>
+				<li>
+					<a href="#">Program</a>
+				</li>
+			</ul>
+		</div>
     </div>
 </body>
