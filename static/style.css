@@ -1,0 +1,97 @@
+body {
+    line-height: 1.3em;
+    font-family: helvetica,arial,sans-serif;
+    font-size:12px;
+    background: #081D24 url(file:///home/ideamonk/Code/inpycon-design/static/images/paperback.jpg) center top repeat;
+}
+a:link {
+    color: #1B5690;
+}
+a:visited {
+    color: #1B5690;;
+}
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+#header {
+    background: #F7F7F7;
+    background: #CDD5DC;
+    background: #1B5891;
+    background: #3876B5;
+    background: #04457A url(http://github.com/ideamonk/inpycon-trash/raw/master/images/back.png) bottom right no-repeat;
+    padding: 20px;
+    margin-bottom: 10px;
+    min-height:50px;
+    -moz-border-radius: 0.5em 0.5em;
+    -webkit-border-radius: 0.5em 0.5em; 
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+}
+#account {
+    float: right;
+    margin-top: -16px;
+    color: #fff;
+    font-size:1.0em;
+}
+
+div#logo { 
+    float: left;
+    margin-right:20px;
+}
+
+#title {
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top:20px;
+}
+
+#sponsors {
+    text-align: center;
+    float: right;
+    width: 150px;
+    height: 100%;
+}
+#sponsors img {
+    padding: 10px;
+}
+
+#sidebar {
+    padding: 5px;
+    float: left;
+    width: 100px;
+    height: 100%;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0px;
+    line-height: 1.5em;
+}
+
+#content {
+    margin: 0px 150px 0px 110px;
+    padding: 0px 10px;
+}
+
+#footer {
+    border-top: 1px solid gray;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0px 10px;
+}
+#footer a {
+    text-decoration: none;
+}
+#footer a:hover {
+    text-decoration: underline;
+}
+
+textarea {
+    width: 100%;
+}
