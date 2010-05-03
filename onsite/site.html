@@ -1,22 +1,30 @@
+$def with (page)
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>$page.title - PyCon India 2010</title>
-    <link rel="stylesheet" type="text/css" href="static/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="static/style.css" />
+    <link rel="stylesheet" type="text/css" href="$homepath()/css/fonts.css?format=raw" />
+    <link rel="stylesheet" type="text/css" href="$homepath()/css/style2.css?format=raw"/>
 
+	<!-- // not needed as of now
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
     <script type="text/javascript">
 		$(document).ready( function(){
 			// do something
 		});
 	</script>
+	-->
 </head>
 <body>
 	<div id="wrapper">
 		<div id="top-menu">
-			Welcome <a href="#">Abhishek</a> | <a href="#">logout</a>
+			$if ctx.user:
+                <form name='logout' action="$homepath()/account/logout" method='POST' style="display:none;"></form> 
+                Welcome <a href="$homepath()/$ctx.user">$ctx.user.displayname</a>! 
+                | <a href="#" onclick="document.forms['logout'].submit()">Log out</a> 
+            $else:
+                <a href="$homepath()/account/login">Login</a>
 		</div>
 		<div id="header">
 			<h1>PyCon India 2010</h1>
@@ -27,18 +35,10 @@
 		</div>
 		<div id="main-menu">
 			<ul>
-				<li>
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#">Sponsors</a>
-				</li>
-				<li>
-					<a href="#">CFP</a>
-				</li>
-				<li>
-					<a href="#">Program</a>
-				</li>
+				<li><a href="$homepath()/">Home</a></li>
+                <li><a href="$homepath()/sponsors">Sponsors</a></li>
+                <li><a href="$homepath()/cfp">CFP</a></li>
+                <li><a href="$homepath()/program">Program</a></li>
 			</ul>
 		</div>
 		
@@ -71,6 +71,11 @@
 			
 			<!-- normal content here -->
 			<div id="contents">
+				$if page.title != "Home":
+					<h3>$page.title</h3>
+				$:page
+				
+				<!-- old fillers
 				<h2>PyCon India 2010</h2>
 				<p>
 					Pycon India 2010 is the second Python conference in India. A purely volunteer effort, it is being hosted for the second time in India, and will attract some of the best Python developers in India and abroad.
@@ -95,6 +100,7 @@
 				<p>
 					Please subscribe to http://in.pycon.org/2010/feed to stay uptodate on the changes to the site.
 				</p>
+				-->
 			</div>
 		</div>
 		
