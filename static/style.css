@@ -9,7 +9,7 @@ body {
     line-height: 1.3em;
     font-family: helvetica,arial,freesans,clean,sans-serif;
     font-size:12px;
-    background: #081D24 url(/static/images/paperback.jpg) center top repeat;
+    background: #DCEFFF ;
 }
 
 #wrapper {
@@ -19,39 +19,71 @@ body {
 }
 
 #top-menu {
-	color:#ffffff;
+	color:#444;
 	font-size:0.9em;
 	text-align:right;
 	margin-top:4px;
 }
 
-#top-menu a, #slogan p a { color:#ffffff; border-bottom: #ddd dotted 1px; }
+#top-menu a, #slogan p a { color:#0B486B; border-bottom: #7DB4B5 dotted 1px; }
 
 #header h1{
-	color:#ffffff;
+	color:#3F4648;
 	font-family:Cantarell-Regular;
 	padding:10px 10px 5px 10px;
 	font-size:3.2em;
 	font-weight:normal;
 }
-#slogan {color:#efefef; padding-left:160px; }
+#slogan { padding-left:160px; }
 #slogan p { display:inline-block; margin:5px; }
 
 #main-menu  { text-align:right; padding:10px 20px 4px 4px; }
-#main-menu ul li { list-style:none; display:inline-block;}
+#main-menu ul li { list-style:none; display:inline-block; }
 #main-menu ul li a { 
 	text-decoration:none; 
-	color:#222; 
+	color:#EAF3F9; 
 	font-weight:bold;
-	background:#ddd;
-	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ccc));
-	border-radius:5px 5px 5px 5px;
-	-webkit-border-radius:5px 5px 5px 5px;
-	-moz-border-radius:5px 5px 5px 5px;
+	background:#01325D;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
 	padding:5px 30px 5px 30px;
 }
 
 #main-menu ul li a:hover { 
-	background:#fff;
-	background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#fff));
+	background:#4C565C;
 }
+
+
+#content {
+	background:#ffffff;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	margin: 10px 20px 20px 20px;
+	padding:10px;
+	overflow: auto;
+}
+#contents { width: 610px; }
+#contents h2 {
+	color:#01325D;
+	background:#D0E3F1;
+	padding:6px 20px 6px 10px;
+	margin:4px 0px 0px 0px;
+	border-radius:5px 5px 0px 0px;
+	display:inline-block;
+}
+#contents p {
+	padding:7px;
+	border-radius: 0px 0px 5px 5px;
+	margin-bottom:20px;
+	background:#efefef;
+}
+
+#sidebar {
+	float:right;
+	width:240px;
+	text-align:center;
+}
+#sidebar h3 {  padding:3px; border-bottom:3px solid #eee; margin-bottom:3px;}
+#sidebar p { padding:5px; margin:3px;}
