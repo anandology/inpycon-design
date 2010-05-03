@@ -95,6 +95,40 @@
 				<h2>Staying upto date</h2>
 				<p>
 					Please subscribe to http://in.pycon.org/2010/feed to stay uptodate on the changes to the site.
+				
+				<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'search',
+				  search: 'inpycon2010',
+				  interval: 6000,
+				  title: 'What they say...',
+				  subject: '#inpycon2010',
+				  width: 'auto',
+				  height: 250,
+				  theme: {
+					shell: {
+					  background: '#8ec1da',
+					  color: '#ffffff'
+					},
+					tweets: {
+					  background: '#ffffff',
+					  color: '#444444',
+					  links: '#1985b5'
+					}
+				  },
+				  features: {
+					scrollbar: false,
+					loop: true,
+					live: true,
+					hashtags: true,
+					timestamp: true,
+					avatars: false,
+					behavior: 'default'
+				  }
+				}).render().start();
+				</script>
 				</p>
 			</div>
 		</div>
