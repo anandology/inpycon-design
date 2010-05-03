@@ -51,7 +51,7 @@ body {
 }
 
 #main-menu ul li a:hover { 
-	background:#4C565C;
+	background:#1356AC;
 }
 
 
@@ -68,16 +68,20 @@ body {
 #contents h2 {
 	color:#01325D;
 	background:#D0E3F1;
-	padding:6px 20px 6px 10px;
+	padding:10px 30px 10px 10px;
 	margin:4px 0px 0px 0px;
 	border-radius:5px 5px 0px 0px;
+	-moz-border-radius:5px 5px 0px 0px;
+	-webkit-border-radius:5px 5px 0px 0px;
 	display:inline-block;
 }
 #contents p {
 	padding:7px;
 	border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
 	margin-bottom:20px;
-	background:#efefef;
+	color:#333;
 }
 
 #sidebar {
