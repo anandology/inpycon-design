@@ -1,0 +1,36 @@
+/* Reset everything for more control */
+* {
+  margin:0px;
+  padding:0px;
+  text-decoration:none;
+}
+
+body {
+    line-height: 1.3em;
+    font-family: helvetica,arial,freesans,clean,sans-serif;
+    font-size:12px;
+    background: #D2EAF7 url(images/taj_back.jpg) right bottom no-repeat;
+}
+
+#wrapper {
+	margin:0px auto;
+	width:900px;
+	background: url(images/leafy_decor.jpg) left top no-repeat;
+}
+
+#header{
+	background: url(images/logo-head.png) left top no-repeat;
+}
+
+#nav ul li { list-style:none; display:inline-block; margin-top:170px; }
+#nav ul li a { 
+	text-decoration:none; 
+	color:#fff; 
+	font-size: 1.2em; 
+	background:#6b4437; 
+	padding:10px 30px; 
+	border-radius:10px 10px 0px 0px;
+}
+#nav ul li a:hover { 
+	color:#ff8e20; 
+}
