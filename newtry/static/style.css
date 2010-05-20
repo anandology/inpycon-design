@@ -28,7 +28,8 @@ body {
 	border-bottom: #cbe2ef 1px solid;
 }
 #content { margin-top:20px; overflow:hidden; padding-bottom:20px; }
-#footer { padding-top:40px; clear:both; text-align:center; color: #6d8f9e; }
+#footer { padding-top:40px; clear:both; text-align:center; color: #6d8f9e; font-size:0.9em; }
+#footer a { color:#000000; border-bottom:1px dotted #000000; }
 
 
 /* 			navigation 			*/

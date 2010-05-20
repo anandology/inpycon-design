@@ -1,9 +1,10 @@
+$def with (page)
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>$page.title - PyCon India 2010</title>
-	<link rel="stylesheet" type="text/css" href="file:///D:/xampp/htdocs/inpycon-design/newtry/static/style.css" />
+	<link rel="stylesheet" type="text/css" href="http://ideamonk.in/inpycon/static/style.css" />
 	
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ideamonk.in/inpycon/static/jquery.countdown.min.js"></script> 
@@ -39,9 +40,12 @@
 	<div id="wrapper">
 		<div id="header">
 			<div id="account">
-				<form name='logout' action="$homepath()/account/logout" method='POST' style="display:none;"></form> 
+				$if ctx.user:
+                    <form name='logout' action="$homepath()/account/logout" method='POST' style="display:none;"></form> 
                     Welcome <a href="$homepath()/$ctx.user">$ctx.user.displayname</a>! 
-                    | <a href="#" onclick="document.forms['logout'].submit()">Log out</a>
+                    | <a href="#" onclick="document.forms['logout'].submit()">Log out</a> 
+                $else:
+                    <a href="$homepath()/account/login">Login</a>
 			</div>
 			
 			<div id="defaultCountdown"></div> 
@@ -104,30 +108,17 @@
 			<!-- end of sidebar -->
 			
 			<div id="contents"> 
+				<!-- 
 				<h2>PyCon India 2010</h2> 
 				<p> 
 					Pycon India 2010 is the second Python conference in India. A purely volunteer effort, it is being hosted for the second time in India, and will attract some of the best Python developers in India and abroad.
 				</p> 
+				-->
 				
-				<h2>Venue</h2> 
-				<p> 
-					Bangalore, (final venue to be decided)
-				</p> 
+				$if page.title != "Home":
+					<h2>$page.title</h2>
+				$:page
 				
-				<h2>Dates to Remember</h2> 
-				<p> 
-					The conference will take place on 25/26 September. The calendar will be posted soon.
-				</p> 
-				
-				<h2>About</h2> 
-				<p> 
-					The conference will consist of a number of full length presentations, a number of shorter lightning talks and open sprints and BoFs.
-				</p> 
-				
-				<h2>Staying upto date</h2> 
-				<p> 
-					Please subscribe to http://in.pycon.org/2010/feed to stay uptodate on the changes to the site.
-				</p> 
 			</div>
 			<!-- end of normal content -->
 			
@@ -135,7 +126,8 @@
 		<!-- end of content -->
 		
 		<div id="footer">
-			&copy; PyCon India 2010
+			<a href="#">Contact Us</a>
+            <span style="float: right">Powered by <a href="http://infogami.org/">Infogami</a></span>
 		</div>
 		<!-- end of content -->
 		
