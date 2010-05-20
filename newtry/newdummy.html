@@ -4,18 +4,41 @@
 <head>
     <title>$page.title - PyCon India 2010</title>
     <link rel="stylesheet" type="text/css" href="static/style.css" />
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="static/jquery.countdown.min.js"></script> 
     <script type="text/javascript">
 		$(document).ready( function(){
-			// do something
+			// setup countdown
+			var pyconDate = new Date(); 
+			pyconDate = new Date(2010, 7, 25);
+			$('#defaultCountdown').countdown({
+				until: pyconDate, 
+				format: 'DHMS',
+				layout: '<div id="t7_timer">'+
+							'<div id="t7_vals">'+
+								'<div id="t7_d" class="t7_numbs">{dnn}</div>'+
+								'<div id="t7_h" class="t7_numbs">{hnn}</div>'+
+								'<div id="t7_m" class="t7_numbs">{mnn}</div>'+
+								'<div id="t7_s" class="t7_numbs">{snn}</div>'+
+							'</div>'+
+							'<div id="t7_labels">'+
+								'<div id="t7_dl" class="t7_labs">days</div>'+
+								'<div id="t7_hl" class="t7_labs">hours</div>'+
+								'<div id="t7_ml" class="t7_labs">mins</div>'+
+								'<div id="t7_sl" class="t7_labs">secs</div>'+
+							'</div>'+
+							'<div id="t7_timer_over"></div>'+
+						'</div>'
+			});
 		});
 	</script>
 </head>
 <body>
 	<div id="wrapper">
 		<div id="header">
+					<div id="defaultCountdown"></div> 
+
 			<div id="nav">
 				<ul>
 					<li>
@@ -105,7 +128,7 @@
 		<!-- end of content -->
 		
 		<div id="footer">
-		
+			&copy; PyCon India 2010
 		</div>
 		<!-- end of content -->
 		

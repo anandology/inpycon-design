@@ -22,7 +22,7 @@ body {
 #wrapper {
 	margin:0px auto;
 	width:900px;
-	background: url(images/leafy_decor.jpg) left -15px no-repeat;
+	background: url(images/leafy_decor.jpg) left -20px no-repeat;
 }
 
 #header{
@@ -30,7 +30,7 @@ body {
 	border-bottom: #cbe2ef 1px solid;
 }
 
-#content { margin-top:20px; overflow:auto; padding-bottom:20px; }
+#content { margin-top:20px; overflow:hidden; padding-bottom:20px; }
 
 /* navigation */
 #nav { border-bottom: #ffffff 1px solid; }
@@ -77,13 +77,183 @@ body {
 /* contents */
 #contents { width: 660px; }
 #contents p {
-	padding: 10px 0px 10px 20px;
+	padding: 10px 0px 15px 30px;
 	border-bottom:1px dashed #769eb0;
 }
 #contents h2 {
 	color:#9c6038;
 	font-family: "Fontin Sans Rg";
 	font-size:2.4em;
-	margin-top:20px;
+	margin-top:25px;
 	text-shadow: -1px 1px 1px #fff;
+}
+
+#footer { padding-top:40px; clear:both; text-align:center; color: #6d8f9e; }
+
+
+/* jQuery Countdown styles 1.5.8. */
+
+/**
+
+
+	By Ten Seven Interactive
+	http://ten7i.com/
+	
+	May 10, 2009 - after years of practice
+
+	If you use this & don't acknowledge it,
+	we will cry a global tear. Be fair!
+
+
+**/
+
+			
+#t7_timer { 
+	width: 300px; 
+	height: 45px; 
+	position: relative;
+}
+#t7_timer_over { 
+	width: 300px; 
+	height: 55px; 
+	background-image: url(Countdown-over.gif);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 1px;
+	margin: 0px;
+	padding: : 0px;
+}
+#t7_vals {
+	width: 100%;
+	clear:both;
+	margin: 0px auto;
+}
+.t7_numbs {
+	font-size: 28px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	color: #ffffff;
+}
+
+#t7_y {
+	background-image: url(Countdown2.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 48px;
+	height:35px;
+	background-color:#ffffff;
+	padding: 0px 0px 0px 3px;
+	margin: 1px;
+		margin-right:5px;
+
+	letter-spacing: 7px;
+}
+#t7_d {
+	background-image: url(Countdown3.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 43px;
+	height:25px;
+	background-color:#ffffff;
+	padding: 7px 0px 0px 3px;
+	margin: 1px;
+		margin-right:5px;
+
+	letter-spacing: 7px;
+}
+#t7_h {
+	background-image: url(Countdown2.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 42px;
+	height:25px;
+	background-color:#ffffff;
+	padding: 7px 0px 0px 3px;
+	margin: 1px;
+		margin-right:5px;
+
+	letter-spacing: 7px;
+}
+#t7_m {
+	background-image: url(Countdown2.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 42px;
+	height:25px;
+	background-color:#ffffff;
+	padding: 7px 0px 0px 3px;
+	margin: 1px;
+	margin-right:5px;
+	letter-spacing: 7px;
+}
+#t7_s {
+	background-image: url(Countdown2-nc.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 42px;
+	height:25px;
+	background-color:#ffffff;
+	padding: 7px 0px 0px 3px;
+	margin: 1px;
+	letter-spacing: 7px;
+}
+
+#t7_labels {
+	width: 100%;
+	clear:both;
+	margin: 0px auto;
+}
+
+.t7_labs {
+	font-size: 9px;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	color: #000000;
+}
+#t7_yl {
+	float:left;
+	width: 51px;
+	height:15px;
+	padding:0px;
+	margin: 0px;
+}
+#t7_dl {
+	float:left;
+	width: 48px;
+	height:15px;
+	padding:0px;
+	margin: 0px;
+}
+#t7_hl {
+	float:left;
+	width: 54px;
+	height:15px;
+	padding:0px;
+	margin: 0px;
+}
+#t7_ml {
+	float:left;
+	width: 55px;
+	height:15px;
+	padding:0px;
+	margin: 0px;
+}
+#t7_sl {
+	float:left;
+	width: 46px;
+	height:15px;
+	padding:0px;
+	margin: 0px;
+}
+
+
+#defaultCountdown { 
+	width: 220px; height: 55px; 
+	text-align: center; 
+	float:right;
+	margin-top:150px;
+
 }
