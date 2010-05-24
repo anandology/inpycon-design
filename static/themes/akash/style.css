@@ -9,23 +9,24 @@ body {
     line-height: 1.3em;
     font-family: helvetica,arial,freesans,clean,sans-serif;
     font-size:12px;
-    background: #DCEFFF ;
+    background: #191919 url(images/sky_back.jpg) top center repeat-x;
 }
 
 #wrapper {
 	margin:0px auto;
-	width:950px;
+	width:780px;
 	min-width:900px;
 }
 
 #top-menu {
-	color:#444;
+	color:#ffffff;
 	font-size:0.9em;
 	text-align:right;
 	margin-top:4px;
 }
 
-#top-menu a, #slogan p a { color:#0B486B; border-bottom: #7DB4B5 dotted 1px; }
+#top-menu a, #slogan p a { color:#ffffff; border-bottom: #2c5e96 dotted 1px;}
+#top-menu a:hover, #slogan p a:hover { color:#103966;}
 
 #header h1{
 	color:#3F4648;
@@ -64,24 +65,25 @@ body {
 	padding:10px;
 	overflow: auto;
 }
-#contents { width: 610px; }
+#contents { width: 590px; }
 #contents h2 {
-	color:#01325D;
-	background:#D0E3F1;
-	padding:10px 30px 10px 10px;
-	margin:4px 0px 0px 0px;
-	border-radius:5px 5px 0px 0px;
-	-moz-border-radius:5px 5px 0px 0px;
-	-webkit-border-radius:5px 5px 0px 0px;
+	color:#EAF3F9;
+	background:#01325D;
+	padding:10px 20px 10px 20px;
+	margin:4px 0px 0px -10px;
+	border-radius:0px 5px 5px 0px;
+	-moz-border-radius:0px 5px 5px 0px;
+	-webkit-border-radius:0px 5px 5px 0px;
 	display:inline-block;
 }
 #contents p {
-	padding:7px;
-	border-radius: 0px 0px 5px 5px;
-	-webkit-border-radius: 0px 0px 5px 5px;
-	-moz-border-radius: 0px 0px 5px 5px;
+	padding:7px 7px 7px 20px;
 	margin-bottom:20px;
 	color:#333;
+	font-size:1.1em;
+	
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#efefef), color-stop(0.7, #fff));
+	border-bottom:1px solid #ddd;
 }
 
 #sidebar {
@@ -89,18 +91,20 @@ body {
 	width:240px;
 	text-align:center;
 }
-#sidebar h3 {  padding:3px; border-bottom:3px solid #eee; margin-bottom:3px;}
+#sidebar h3 {  padding:3px; margin-bottom:3px;}
 #sidebar p { padding:5px; margin:3px;}
 
 
 #footer {
-    border-top: 1px solid gray;
+    border-top: 1px dashed gray;
     font-size: 0.8em;
     text-align: center;
     padding: 0px 10px;
+    color:#efefef;
 }
 #footer a {
     text-decoration: none;
+    color:#efefef;
 }
 #footer a:hover {
     text-decoration: underline;
@@ -109,3 +113,5 @@ body {
 textarea {
     width: 100%;
 }
+
+@font-face { font-family: Cantarell-Regular; src: url('/static/fonts/Cantarell-Regular.ttf'); } 
