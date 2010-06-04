@@ -75,7 +75,7 @@ body {
 
 /* 			contents 			*/
 #contents { width: 660px; }
-#contents p {
+#contents p p{
 	padding: 10px 0px 15px 30px;
 	border-bottom:1px dashed #769eb0;
 }
