@@ -16,20 +16,38 @@ tglobals = dict(
 )
 
 text = """
-<h2>Welcome</h2>
+<p>PyCon India 2010 is the second Python conference in India. A purely volunteer effort, it is being hosted for the second time in India, and will attract some of the best Python developers in India and abroad.
+</p>
 
-<p>
+<h2>Venue</h2>
+<p>M S Ramaiah Institute of Technology    <br />
+
+   Bangalore
+</p>
+
+<h2>Dates to Remember</h2>
+<p>The conference will take place on 25th and 26th, September 2010. The calendar will be posted soon.
+</p>
+
+<h2>About</h2>
+<p>The conference will consist of a number of full length presentations, a number of shorter lightning talks and open sprints and BoFs.
+</p>
+
+<h2>Staying upto date</h2>
+<p>Please subscribe to <a href="http://in.pycon.org/2010/feed">RSS feed</a> to stay up-to-date on the changes to the site
+</p>
+
+<h3>Testing H3</h3>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+
+<h4>Testing H4</h4>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 """
 
 def render_page(name):
+    name = name or "PyCon India 2010"
     return web.template.TemplateResult(title=name, __body__=text)
 
 class media:
