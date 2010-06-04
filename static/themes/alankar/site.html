@@ -4,18 +4,18 @@ $def with (page)
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>$page.title - PyCon India 2010</title>
-    <link rel="stylesheet" type="text/css" href="/themes/alankar/style.css" />
-
+    <link rel="stylesheet" type="text/css" href="$homepath()/static/themes/alankar/style.css" />
+    
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ideamonk.in/inpycon/static/jquery.countdown.min.js"></script>
-
+    <script type="text/javascript" src="$homepath()/static/themes/alankar/jquery.countdown.min.js"></script> 
+    
     <script type="text/javascript">
         \$(document).ready( function(){
             // setup countdown
-            var pyconDate = new Date();
+            var pyconDate = new Date(); 
             pyconDate = new Date(2010, 7, 25);
             \$('#defaultCountdown').countdown({
-                until: pyconDate,
+                until: pyconDate, 
                 format: 'DHMS',
                 layout: '<div id="t7_timer">'+
                             '<div id="t7_vals">'+
@@ -42,14 +42,14 @@ $def with (page)
             <div id="account">
                 $if ctx.user:
                     <form name='logout' action="$homepath()/account/logout" method='POST' style="display:none;"></form>
-                    Welcome <a href="$homepath()/$ctx.user">$ctx.user.displayname</a>!
-                    | <a href="#" onclick="document.forms['logout'].submit()">Log out</a>
+                    Welcome <a href="$homepath()/$ctx.user">$ctx.user.displayname</a>! 
+                    | <a href="#" onclick="document.forms['logout'].submit()">Log out</a> 
                 $else:
                     <a href="$homepath()/account/login">Login</a>
-
             </div>
-            <div id="defaultCountdown"></div>
-
+            
+            <div id="defaultCountdown"></div> 
+            
             <div id="nav">
                 <ul>
                     <li>
@@ -73,59 +73,58 @@ $def with (page)
             </div>
         </div>
         <!-- end of header -->
-
+        
         <div id="content">
-            <div id="sidebar">
-                <h3>Platinum Sponspors</h3>
-                <p>
-                    <img src="http://placehold.it/120x80&text=Sponsor" alt="" title=""/>
-                </p>
-
-                <h3>Gold Sponspors</h3>
-                <p>
-                    <img src="http://placehold.it/120x80&text=Sponsor" alt="" title=""/>
-                </p>
-                <p>
-                    <img src="http://placehold.it/120x80&text=Sponsor" alt="" title=""/>
-                </p>
-
-                <h3>Silver Sponspors</h3>
-                <p>
-                    <img src="http://placehold.it/120x80&text=Sponsor" alt="" title=""/>
-                </p>
-                <p>
-                    <img src="http://placehold.it/120x80&text=Sponsor" alt="" title=""/>
-                </p>
-                <p>
-                    <img src="http://placehold.it/120x80&text=Sponsor" alt="" title=""/>
-                </p>
-            </div>
+            <div id="sidebar"> 
+                <h3>Platinum Sponspors</h3> 
+                <p> 
+                    <img class="sponsor" src="http://placehold.it/120x80&text=Sponsor" alt="" title=""/> 
+                </p> 
+                
+                <h3>Gold Sponspors</h3> 
+                <p> 
+                    <img class="sponsor" src="http://placehold.it/120x80&text=Sponsor" alt="" title=""/> 
+                </p> 
+                <p> 
+                    <img class="sponsor" src="http://placehold.it/120x80&text=Sponsor" alt="" title=""/> 
+                </p> 
+                
+                <h3>Silver Sponspors</h3> 
+                <p> 
+                    <img class="sponsor" src="http://placehold.it/120x80&text=Sponsor" alt="" title=""/> 
+                </p> 
+                <p> 
+                    <img class="sponsor" src="http://placehold.it/120x80&text=Sponsor" alt="" title=""/> 
+                </p> 
+                <p> 
+                    <img class="sponsor" src="http://placehold.it/120x80&text=Sponsor" alt="" title=""/> 
+                </p> 
+            </div> 
             <!-- end of sidebar -->
-
-            <div id="contents">
-                <!--
-                <h2>PyCon India 2010</h2>
-                <p>
-                    Pycon India 2010 is the second Python conference in India. A purely volunteer effort, it is being hosted for the second time in India, and will attract some of the best Python developers in India and abroad.
-                </p>
-                -->
-
+            
+            <div id="contents"> 
+                <div class="flash-messages">
+                    $for flash in get_flash_messages():
+                        <div class="$flash.type"><span>$flash.message</span></div>
+                        <div class="clearfix"></div>
+                </div>
+                
                 $if page.title != "Home":
                     <h2>$page.title</h2>
                 $:page
-
+                
             </div>
             <!-- end of normal content -->
-
+            
         </div>
         <!-- end of content -->
-
+        
         <div id="footer">
             <a href="#">Contact Us</a>
             <span style="float: right">Powered by <a href="http://infogami.org/">Infogami</a></span>
         </div>
         <!-- end of content -->
-
+        
     </div>
 </body>
 </html>

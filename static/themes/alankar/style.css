@@ -1,5 +1,5 @@
 /* 			web fonts 			*/
-@font-face { font-family:"Fontin Sans Rg"; src:url("http://ideamonk.in/inpycon/static/fonts/Fontin_Sans_R_45b.otf") format("opentype"); }
+@font-face { font-family:"Fontin Sans Rg"; src:url("fonts/Fontin_Sans_R_45b.otf") format("opentype"); }
 
 
 /* 			Reset everything for more control 		*/
@@ -27,7 +27,7 @@ body {
 	background: url(images/logo-head.png) left -20px no-repeat;
 	border-bottom: #cbe2ef 1px solid;
 }
-#content { margin-top:20px; overflow:hidden; padding-bottom:20px; }
+#content { margin-top:20px; overflow:hidden; padding-bottom:20px; clear: both;}
 #footer { padding-top:40px; clear:both; text-align:center; color: #6d8f9e; font-size:0.9em; }
 #footer a { color:#000000; border-bottom:1px dotted #000000; }
 
@@ -137,7 +137,7 @@ clear:both;
 #t7_timer_over {
 	width: 300px;
 	height: 55px;
-	background-image: url(Countdown-over.gif);
+	background-image: url(images/Countdown-over.gif);
 	background-repeat: no-repeat;
 	position: absolute;
 	top: 0px;
@@ -159,7 +159,7 @@ clear:both;
 }
 
 #t7_y {
-	background-image: url(Countdown2.png);
+	background-image: url(images/Countdown2.png);
 	background-repeat: no-repeat;
 	float:left;
 	width: 48px;
@@ -172,7 +172,7 @@ clear:both;
 	letter-spacing: 7px;
 }
 #t7_d {
-	background-image: url(Countdown3.png);
+	background-image: url(images/Countdown3.png);
 	background-repeat: no-repeat;
 	float:left;
 	width: 43px;
@@ -185,7 +185,7 @@ clear:both;
 	letter-spacing: 7px;
 }
 #t7_h {
-	background-image: url(Countdown2.png);
+	background-image: url(images/Countdown2.png);
 	background-repeat: no-repeat;
 	float:left;
 	width: 42px;
@@ -198,7 +198,7 @@ clear:both;
 	letter-spacing: 7px;
 }
 #t7_m {
-	background-image: url(Countdown2.png);
+	background-image: url(images/Countdown2.png);
 	background-repeat: no-repeat;
 	float:left;
 	width: 42px;
@@ -210,7 +210,7 @@ clear:both;
 	letter-spacing: 7px;
 }
 #t7_s {
-	background-image: url(Countdown2-nc.png);
+	background-image: url(images/Countdown2-nc.png);
 	background-repeat: no-repeat;
 	float:left;
 	width: 42px;
@@ -270,3 +270,6 @@ clear:both;
 	margin: 0px;
 }
 
+img.sponsor {
+    padding: 5px;
+}
