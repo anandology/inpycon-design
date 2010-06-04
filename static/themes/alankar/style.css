@@ -21,10 +21,10 @@ body {
 #wrapper {
 	margin:0px auto;
 	width:900px;
-	background: url(images/leafy_decor.jpg) left -20px no-repeat;
+/* 	background: url(images/leafy_decor.jpg) left -20px no-repeat; */
 }
 #header{
-	background: url(images/logo-head.png) left -10px no-repeat;
+	background: url(images/logo-head.png) left -20px no-repeat;
 	border-bottom: #cbe2ef 1px solid;
 }
 #content { margin-top:20px; overflow:hidden; padding-bottom:20px; }
@@ -34,28 +34,28 @@ body {
 
 /* 			navigation 			*/
 #nav { border-bottom: #ffffff 1px solid;}
-#nav ul li { 
-	list-style:none; 
-	display:inline-block; 
-	margin-top:150px; 
+#nav ul li {
+	list-style:none;
+	display:inline-block;
+	margin-top:120px;
 	text-align:left;
 	font-family: "Fontin Sans Rg";
 	padding:10px 20px;
 }
-#nav ul li a { 
-	text-decoration:none; 
-	color:#80a1b8; 
-	font-size: 1.7em; 
+#nav ul li a {
+	text-decoration:none;
+	color:#80a1b8;
+	font-size: 1.7em;
 	text-shadow:-1px 1px 1px #fff;
 }
-#nav ul li span{ 
-	color:#80a1b8; 
-	font-size: 1.0em; 
+#nav ul li span{
+	color:#80a1b8;
+	font-size: 1.0em;
 	display:block;
 	padding-top:4px;
 }
-#nav ul li a:hover { color:#4a688b; } 
-#nav ul li:hover { 
+#nav ul li a:hover { color:#4a688b; }
+#nav ul li:hover {
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D2EAF7), to(#e0f4ff), color-stop(.1,#D2EAF7));
 }
 
@@ -97,6 +97,15 @@ body {
 }
 #account a { color:#0000a0; border-bottom:1px dotted #4a688b; margin-right:4px; display:inline-block; }
 
+
+
+/*              login box               */
+.loginbox { text-align:left; margin-bottom:20px;}
+
+
+
+
+
 /* jQuery Countdown styles 1.5.8. */
 
 /**
@@ -104,7 +113,7 @@ body {
 
 	By Ten Seven Interactive
 	http://ten7i.com/
-	
+
 	May 10, 2009 - after years of practice
 
 	If you use this & don't acknowledge it,
@@ -112,22 +121,22 @@ body {
 
 
 **/
-#defaultCountdown { 
+#defaultCountdown {
 clear:both;
-	width: 220px; height: 55px; 
-	text-align: center; 
+	width: 220px; height: 55px;
+	text-align: center;
 	float:right;
-	margin-top:120px;
+	margin-top:105px;
 
-}	
-#t7_timer { 
-	width: 300px; 
-	height: 45px; 
+}
+#t7_timer {
+	width: 300px;
+	height: 45px;
 	position: relative;
 }
-#t7_timer_over { 
-	width: 300px; 
-	height: 55px; 
+#t7_timer_over {
+	width: 300px;
+	height: 55px;
 	background-image: url(Countdown-over.gif);
 	background-repeat: no-repeat;
 	position: absolute;
